@@ -1,0 +1,122 @@
+<style>
+    nav {
+        background-color: #f4f4f4;
+        padding: 15px;
+        width: 250px;
+    }
+
+    nav h2 {
+        margin-top: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav li {
+        margin-bottom: 8px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    nav a:hover {
+        color: #007acc;
+    }
+
+
+.contact-box {
+    background-color: rgb(136, 184, 168); /* cor da caixa */
+    border: 1px solid rgb(136, 184, 168);
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+}
+
+.contact-box ul {
+    list-style: none;
+    display: flex;
+    gap: 200px; /* espaço entre itens */
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap; /* permite quebra em telas pequenas */
+    align-items: center;
+}
+
+/* seleciona todos os links a dentro da contact-box*/
+.contact-box li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+/*O seletor :hover aplica estilo quando o utilizador passa o rato por cima do link.
+Neste caso, muda a cor do link para azul (#007acc) quando o rato está sobre ele, criando feedback visual ao utilizador*/
+.contact-box li a:hover {
+    color: #007acc;
+}
+
+
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container de skills responsivo */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as caixas passem para a linha seguinte */
+    gap: 10px; /* Espaço entre caixas */
+}
+
+/* Caixa genérica */
+.box {
+    display: inline-block;/* Caixa acompanha o tamanho do texto */
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    white-space:nowrap; /*Evita quebra de linha dentro da caixa*/
+}
+
+/* Hard skills */
+.hard-skill {
+    background-color: lightblue;
+    border: 1px solid #3399ff;
+    color: #000;
+}
+
+/* Soft skills */
+.soft-skill {
+    background-color: lightpink;
+    border: 1px solid #ff66a3;
+    color: #000;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .skills-list {
+        justify-content: flex-start;
+    }
+    .box {
+        width: auto;
+        margin-bottom: 5px;
+    }
+}
+
+</style>
